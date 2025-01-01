@@ -26,8 +26,8 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: build self-contained
-      #run: dotnet publish -r linux-x64 --self-contained false
-      run: dotnet publish -r linux-x64
+      run: dotnet publish -r linux-x64 --self-contained true
+      #run: dotnet publish -r linux-x64
     - name: ls
       run: |
         ls -la .
